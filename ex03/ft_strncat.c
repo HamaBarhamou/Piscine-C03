@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/18 19:51:30 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/18 21:23:28 by bissaka-         ###   ########.fr       */
+/*   Created: 2021/09/18 21:25:17 by bissaka-          #+#    #+#             */
+/*   Updated: 2021/09/18 21:33:49 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include<stdio.h>
 //#include<string.h>
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
-	int	j;
+	unsigned int	i;
+	int				j;
 
 	i = 0;
 	j = 0;
 	while (dest[i] && dest[i] != '\0')
 		i++;
-	while (src[j])
+	while (src[j] && i < nb)
 	{
 		dest[i] = src[j];
 		i++;
@@ -35,6 +35,6 @@ char	*ft_strcat(char *dest, char *src)
 /*int main(void)
 {
 	char ch1[100]="ali ", *ch2="barhamou joue";
-	printf("%s\n",strcat(ch1,ch2));
-	printf("%s\n",ft_strcat(ch1,ch2));
+	printf("%s\n",strncat(ch1,ch2,6));
+	printf("%s\n",ft_strncat(ch1,ch2,6));
 }*/
