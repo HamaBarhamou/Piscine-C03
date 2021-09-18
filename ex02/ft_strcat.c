@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/18 18:28:16 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/18 19:39:35 by bissaka-         ###   ########.fr       */
+/*   Created: 2021/09/18 19:51:30 by bissaka-          #+#    #+#             */
+/*   Updated: 2021/09/18 21:22:24 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include<stdio.h>
 //#include<string.h>
 
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_strcat(char *dest, char *src)
 {
-	while (*s1 != '\0' && (*s1 == *s2))
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	while (dest[i] && dest[i] != '\0')
+		i++;
+	while (src[j])
 	{
-		s1++;
-		s2++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	if (s1 == s2)
-		return (0);
-	else
-		return ((int)*s1 - (int)*s2);
+	dest[i] = '\0';
+	return (dest);
 }
 
 /*int main(void)
 {
-	char *ch1="mariam", *ch2=" joue";
-	printf("%d\n",strcmp(ch1,ch2));
-	printf("%d\n",ft_strcmp(ch1,ch2));
+	char ch1[100]="ali ", *ch2="barhamou joue";
+	printf("%s\n",strcat(ch1,ch2));
+	printf("%s\n",ft_strcat(ch1,ch2));
 }*/
