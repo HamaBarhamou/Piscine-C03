@@ -6,7 +6,7 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 18:28:16 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/18 19:39:35 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/21 12:11:09 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_strcmp(char *s1, char *s2)
 
 /*int main(void)
 {
-	char *ch1="mariam", *ch2=" joue";
+	char *ch1="bissaka president", *ch2="bkati ministre de leconomi";
 	printf("%d\n",strcmp(ch1,ch2));
 	printf("%d\n",ft_strcmp(ch1,ch2));
 }*/

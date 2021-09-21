@@ -6,13 +6,12 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 19:51:30 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/18 21:23:28 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/21 13:06:54 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include<stdio.h>
 //#include<string.h>
-
 char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
@@ -35,6 +34,6 @@ char	*ft_strcat(char *dest, char *src)
 /*int main(void)
 {
 	char ch1[100]="ali ", *ch2="barhamou joue";
-	printf("%s\n",strcat(ch1,ch2));
+	//printf("%s\n",strcat(ch1,ch2));
 	printf("%s\n",ft_strcat(ch1,ch2));
 }*/

@@ -6,7 +6,7 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 19:40:52 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/18 19:48:33 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/21 12:15:33 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 
 /*int main(void)
 {
-	char *ch1="ali", *ch2="barhamou joue";
+	char *ch2="ali", *ch1="barhamou joue";
 	printf("%d\n",strncmp(ch1,ch2,8));
 	printf("%d\n",ft_strncmp(ch1,ch2,8));
 }*/
