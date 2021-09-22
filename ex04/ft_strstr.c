@@ -6,12 +6,10 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 21:36:17 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/21 13:05:48 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/22 11:03:16 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include<stdlib.h>
-//#include<stdio.h>
 #include<string.h>
 
 int	compare(const char *X, const char *Y)
@@ -30,7 +28,12 @@ int	compare(const char *X, const char *Y)
 
 char	*ft_strstr(char	*str, char	*to_find)
 {
-	while (*str != '\0')
+	int	i;
+
+	i = 0;
+	if (str[0] == '\0')
+		return (str);
+	while (str[i])
 	{
 		if ((*str == *to_find) && compare(str, to_find))
 		{
@@ -41,12 +44,14 @@ char	*ft_strstr(char	*str, char	*to_find)
 	return (NULL);
 }
 
-/*int main()
+/*#include<stdlib.h>
+#include<stdio.h>
+int main()
 {
-    char *X = "Teste de test";
+    char *X = "ici test de mon test";
     char *Y = "test";
  
-    printf("%s\n", ft_strstr(X, Y));
+    //printf("%s\n", ft_strstr(X, Y));
 	printf("%s\n", strstr(X, Y));
     return 0;
 }*/

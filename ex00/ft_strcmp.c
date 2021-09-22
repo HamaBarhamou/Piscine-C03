@@ -6,12 +6,9 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 18:28:16 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/21 12:11:09 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/22 11:04:52 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include<stdio.h>
-//#include<string.h>
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -26,9 +23,13 @@ int	ft_strcmp(char *s1, char *s2)
 		return ((int)*s1 - (int)*s2);
 }
 
-/*int main(void)
+/*
+#include<stdio.h>
+#include<string.h>
+int main(void)
 {
-	char *ch1="bissaka president", *ch2="bkati ministre de leconomi";
+	//char *ch1="bissaka president", *ch2="bkati ministre de leconomi";
+	char ch1[] = "a2abELLO", ch2[]= "a2abD";
 	printf("%d\n",strcmp(ch1,ch2));
 	printf("%d\n",ft_strcmp(ch1,ch2));
 }*/
